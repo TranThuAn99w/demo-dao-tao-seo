@@ -219,11 +219,11 @@
         padding-top: 165px;
         height: 820px;
         color: #18191f;
-        @include respond-tabLand{
+        @include respond-tabLand {
           padding-top: 85px;
           height: 650px;
         }
-        @include respond-tabPort{
+        @include respond-tabPort {
           padding-top: 55px;
           min-height: 580px;
         }
@@ -231,7 +231,7 @@
           background: url("banner-1.png");
           background-repeat: no-repeat;
           background-size: contain;
-          @include respond-tabPort{
+          @include respond-tabPort {
             background-size: cover;
             background-position: bottom right;
           }
@@ -272,16 +272,16 @@
               width: 100%;
               height: 100%;
             }
-            @include respond-tabLand{
+            @include respond-tabLand {
               width: calc(100% - 50px);
               height: calc(100% - 50px);
-              img{
+              img {
                 width: 90%;
                 height: 90%;
                 margin-left: auto;
               }
             }
-            
+
             @include respond-phone {
               width: 100%;
               display: flex;
@@ -301,7 +301,7 @@
       .content {
         &__head {
           width: 600px;
-          @include respond-phone{
+          @include respond-phone {
             width: 100%;
           }
         }
@@ -317,7 +317,7 @@
         }
         &__logos {
           width: 877px;
-          @include respond-tabPort{
+          @include respond-tabPort {
             width: 100%;
           }
           .grid {
@@ -326,11 +326,11 @@
             list-style: none;
             align-items: center;
             text-align: center;
-            @include respond-tabPort{
+            @include respond-tabPort {
               gap: 5px;
               padding-left: 0px;
             }
-            @include respond-phone{
+            @include respond-phone {
               grid-template-columns: repeat(2, 1fr);
             }
           }
@@ -341,46 +341,45 @@
       .content {
         &__cards {
           grid-template-columns: repeat(3, 1fr);
-          @include respond-tabPort{
+          @include respond-tabPort {
             grid-template-columns: 1fr;
           }
           .card {
-          @include respond-tabPort{
-            .row{
-              display: flex;
+            @include respond-tabPort {
+              .row {
+                display: flex;
+              }
             }
-          }
-          @include respond-phone{
-            .row{
-              flex-direction: column;
+            @include respond-phone {
+              .row {
+                flex-direction: column;
+              }
             }
-          }
-          &__image {
+            &__image {
               width: 200px;
               height: 160px;
-            @include respond-tabPort{
+              @include respond-tabPort {
                 width: 400px;
-            }
-          @include respond-phone{
-            width: 160px;
-            height: 120px;
-          }
+              }
+              @include respond-phone {
+                width: 160px;
+                height: 120px;
+              }
               img {
                 width: 100%;
                 height: 100%;
               }
-          }
-
+            }
           }
         }
         &__text {
           padding: 32px 0;
-          @include respond-tabPort{
+          @include respond-tabPort {
             width: 100%;
             text-align: left;
             padding: 16px;
           }
-          @include respond-phone{
+          @include respond-phone {
             text-align: center;
           }
           h5 {
@@ -393,13 +392,13 @@
         }
       }
     }
-    &__video{
-      iframe{
+    &__video {
+      iframe {
         width: 691px;
         height: 390px;
-        @include respond-tabPort{
+        @include respond-tabPort {
           width: 100%;
-          height: 390px;
+          height: 280px;
         }
       }
     }
@@ -407,7 +406,7 @@
       .content {
         &__head {
           width: 700px;
-          @include respond-phone{
+          @include respond-phone {
             width: 100%;
           }
         }
@@ -416,18 +415,17 @@
           grid-template-columns: repeat(3, 1fr);
           justify-content: center;
           row-gap: 15px;
-          &.mb{
+          &.mb {
             display: none;
           }
-          @include respond-phone{
-            &.desk{
+          @include respond-phone {
+            &.desk {
               display: none;
             }
-            &.mb{
+            &.mb {
               display: grid;
             }
             grid-template-columns: repeat(1, 1fr);
-
           }
           & > .row {
             grid-column: 1 / span 3;
@@ -438,7 +436,7 @@
             width: 730px;
             margin: auto;
             row-gap: 0;
-            @include respond-tabPort{
+            @include respond-tabPort {
               width: 500px;
             }
           }
@@ -448,9 +446,9 @@
               width: 114px;
               height: 50px;
               margin-bottom: 56px;
-            @include respond-tabPort{
-              margin-bottom: 32px;
-            }
+              @include respond-tabPort {
+                margin-bottom: 32px;
+              }
               img {
                 width: 100%;
               }
@@ -465,24 +463,27 @@
       }
     }
     &__khoa-hoc {
-      height: 580px;
+      height: 780px;
       background: url("Cover-Image.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: top center;
       position: relative;
+      @include respond-phone{
+        height: 580px;
+      }
       .box {
         width: 540px;
         background-color: #fff;
         position: absolute;
         top: 300px;
         right: 165px;
-        @include respond-tabPort{
+        @include respond-tabPort {
           width: 380px;
           top: 165px;
           right: 16px;
         }
-        @include respond-phone{
+        @include respond-phone {
           top: 200px;
           right: 0;
           width: 100%;
@@ -490,7 +491,7 @@
         .content {
           padding: 64px;
           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-          @include respond-tabPort{
+          @include respond-tabPort {
             padding: 32px 40px;
           }
           &__head {
@@ -498,7 +499,7 @@
             h3 {
               font-size: 40px;
               line-height: 54px;
-              @include respond-tabPort{
+              @include respond-tabPort {
                 font-size: 30px;
                 line-height: 40px;
               }
@@ -509,8 +510,8 @@
               font-size: 48px;
               font-weight: 700;
               margin-bottom: 32px !important;
-              @include respond-tabPort{
-              font-size: 35px;
+              @include respond-tabPort {
+                font-size: 35px;
               }
             }
             p,
@@ -551,7 +552,7 @@
         &__head {
           width: 540px;
           margin-bottom: 32px;
-          @include respond-phone{
+          @include respond-phone {
             width: 90%;
           }
           h2 {
@@ -560,8 +561,8 @@
         }
         &__cards {
           grid-template-columns: 1fr 1fr;
-          @include respond-phone{
-          grid-template-columns: 1fr;
+          @include respond-phone {
+            grid-template-columns: 1fr;
           }
           .card {
             &__image {
@@ -581,15 +582,15 @@
       .content {
         &__head {
           width: 540px;
-          @include respond-phone{
+          @include respond-phone {
             width: 100%;
           }
         }
         &__cards {
           grid-template-columns: repeat(3, 1fr);
-          @include respond-phone{
+          @include respond-phone {
             grid-template-columns: 1fr;
-            }
+          }
           .card {
             text-align: center;
             // background-color: #fff;
@@ -666,30 +667,32 @@
       }
     }
     &__khoa-seo {
-      min-height: 400px;
+      min-height: 700px;
       background: url("BG.png");
-      background-repeat: repeat;
+      background-repeat: no-repeat;
       background-size: contain;
+      @include respond-phone {
+        background-repeat: repeat;
+      }
       .content {
         .row {
-          @include respond-phone{
+          @include respond-phone {
             flex-direction: column;
           }
           .col-left {
             width: 480px;
-          @include respond-tabPort{
-            width: 270px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            
-          }
-          @include respond-phone{
-            width: 100%;
-            .content__image{
-              display: none;
+            @include respond-tabPort {
+              width: 270px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
             }
-          }
+            @include respond-phone {
+              width: 100%;
+              .content__image {
+                display: none;
+              }
+            }
             .content__head {
               margin-bottom: 24px;
               h2 {
@@ -706,9 +709,9 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-end;
-          @include respond-phone{
-            margin: 0;
-          }
+            @include respond-phone {
+              margin: 0;
+            }
             .box {
               padding: 48px 60px 48px 80px;
               &.bg-gray {
@@ -744,15 +747,15 @@
       .content {
         &__head {
           width: 500px;
-          @include respond-phone{
+          @include respond-phone {
             width: 100%;
           }
         }
         &__cards {
           grid-template-columns: repeat(3, 1fr);
-          @include respond-phone{
+          @include respond-phone {
             grid-template-columns: 1fr;
-            }
+          }
           .card {
             background-color: #fff;
             padding: 40px 32px;
@@ -781,15 +784,15 @@
           width: 474px;
           height: 560px;
           margin-left: 40px;
-          img{
+          img {
             width: 100%;
             height: 100%;
           }
-          @include respond-tabLand{
+          @include respond-tabLand {
             width: calc(100% - 74px);
             height: calc(100% - 30px);
           }
-          @include respond-tabPort{
+          @include respond-tabPort {
             width: 300px;
             height: 300px;
             margin: auto;
@@ -797,7 +800,7 @@
         }
         &__text {
           margin-right: 30px;
-          @include respond-tabPort{
+          @include respond-tabPort {
             margin-right: 0;
             padding: 32px;
           }
@@ -807,13 +810,14 @@
               font-size: 40px;
               line-height: 54px;
             }
-          @include respond-tabPort{
-            text-align: center;
-            h3, p{
-              font-size: 34px;
-              line-height: 44px;
+            @include respond-tabPort {
+              text-align: center;
+              h3,
+              p {
+                font-size: 34px;
+                line-height: 44px;
+              }
             }
-          }
           }
         }
       }
@@ -848,20 +852,20 @@
         color: #5868e3;
         font-size: 30px;
       }
-      @include respond-tabLand{
-        .slick-prev{
+      @include respond-tabLand {
+        .slick-prev {
           left: 0;
         }
-        .slick-next{
-          right:0;
+        .slick-next {
+          right: 0;
         }
       }
-      @include respond-tabPort{
-        .list-chuyen-gia{
-          .chuyen-gia{
-            .flex{
+      @include respond-tabPort {
+        .list-chuyen-gia {
+          .chuyen-gia {
+            .flex {
               flex-direction: column;
-              .col-6{
+              .col-6 {
                 width: 100%;
               }
             }
@@ -962,10 +966,10 @@
           position: absolute;
           right: -20px;
           top: -5px;
-          @include respond-tabLand{
+          @include respond-tabLand {
             right: -10px;
           }
-          @include respond-phone{
+          @include respond-phone {
             width: 100px;
             height: 100px;
             top: 60px;
@@ -981,12 +985,12 @@
           position: absolute;
           right: -20px;
           top: -5px;
-          @include respond-tabLand{
+          @include respond-tabLand {
             right: -10px;
           }
-          @include respond-phone{
+          @include respond-phone {
             width: 100px;
-          height: 100px;
+            height: 100px;
             top: 60px;
             right: 10px;
           }
@@ -1007,11 +1011,11 @@
               padding: 54px;
               position: relative;
               margin-bottom: 32px;
-              @include respond-tabLand{
+              @include respond-tabLand {
                 min-height: 140px;
               }
-              @include respond-tabPort{
-                min-height: 250px;
+              @include respond-tabPort {
+                min-height: 252px;
               }
               p {
                 font-size: 16px;
@@ -1077,12 +1081,12 @@
             color: #fff;
             font-size: 30px;
           }
-          @include respond-tabLand{
-            .slick-prev{
+          @include respond-tabLand {
+            .slick-prev {
               left: -10px;
             }
-            .slick-next{
-              right:0;
+            .slick-next {
+              right: 0;
             }
           }
         }
@@ -1094,9 +1098,10 @@
           .flex {
             justify-content: space-between;
             align-items: center;
-            @include respond-phone{
+            @include respond-phone {
               flex-direction: column;
-              h2, p{
+              h2,
+              p {
                 width: 100%;
                 text-align: center;
               }
@@ -1121,13 +1126,13 @@
       .content {
         &__head {
           width: 600px;
-          @include respond-phone{
+          @include respond-phone {
             width: 100%;
           }
         }
         &__text {
           max-width: 480px;
-          @include respond-tabPort{
+          @include respond-tabPort {
             width: 100%;
           }
           .text-head {
@@ -1135,9 +1140,9 @@
             font-size: 34px;
             line-height: 44px;
             color: #3d3d3d;
-            @include respond-tabPort{
-             font-size: 24px;
-             line-height: 34px;
+            @include respond-tabPort {
+              font-size: 24px;
+              line-height: 34px;
             }
           }
           .sub-tip {
@@ -1151,15 +1156,15 @@
           .text {
             font-size: 24px;
             line-height: 32px;
-            @include respond-tabPort{
+            @include respond-tabPort {
               font-size: 20px;
               line-height: 34px;
-             }
+            }
           }
         }
         &__price {
           max-width: 400px;
-          @include respond-tabPort{
+          @include respond-tabPort {
             width: 100%;
           }
           .cost {
@@ -1167,10 +1172,10 @@
             color: #c0c0c0;
             font-size: 28px;
             line-height: 54px;
-            @include respond-tabPort{
+            @include respond-tabPort {
               font-size: 24px;
               line-height: 34px;
-             }
+            }
           }
           .discount {
             font-size: 40px;
@@ -1178,10 +1183,10 @@
             color: #de1010;
             font-weight: 600;
             margin: 24px 0;
-            @include respond-tabPort{
+            @include respond-tabPort {
               font-size: 34px;
               line-height: 44px;
-             }
+            }
           }
           .btn__link {
             width: 215px;
@@ -1194,10 +1199,10 @@
         .box {
           padding: 56px;
           box-shadow: 0px 8px 34px 0px #4484fc1c;
-          @include respond-tabPort{
+          @include respond-tabPort {
             padding: 24px;
           }
-          @include respond-phone{
+          @include respond-phone {
             flex-direction: column;
           }
         }
@@ -1209,6 +1214,9 @@
           width: 400px;
           text-align: center;
           font-size: 28px;
+          @include respond-tabPort {
+            width: 100%;
+          }
         }
         &__count-down {
           .time {
@@ -1235,12 +1243,11 @@
             justify-content: space-around;
             align-items: center;
           }
-        
         }
-        @include respond-phone{
-          .flex{
+        @include respond-phone {
+          .flex {
             flex-direction: column;
-            .col-6{
+            .col-6 {
               width: 100%;
             }
           }
@@ -1251,10 +1258,9 @@
       .content {
         &__head {
           width: 540px;
-          @include respond-phone{
+          @include respond-phone {
             width: 100%;
-          }          
-
+          }
         }
       }
     }
@@ -1349,7 +1355,7 @@
       }
     }
   }
-  
+
   @keyframes intro {
     0% {
       color: #276ae3;

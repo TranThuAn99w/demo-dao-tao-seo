@@ -556,7 +556,7 @@
 @media (max-width: 900px) {
   #dao-tao-body .ss__video iframe {
     width: 100%;
-    height: 390px;
+    height: 280px;
   }
 }
 
@@ -646,12 +646,18 @@
 }
 
 #dao-tao-body .ss__khoa-hoc {
-  height: 580px;
+  height: 780px;
   background: url("Cover-Image.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
   position: relative;
+}
+
+@media (max-width: 600px) {
+  #dao-tao-body .ss__khoa-hoc {
+    height: 580px;
+  }
 }
 
 #dao-tao-body .ss__khoa-hoc .box {
@@ -901,10 +907,16 @@
 }
 
 #dao-tao-body .ss__khoa-seo {
-  min-height: 400px;
+  min-height: 700px;
   background: url("BG.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (max-width: 600px) {
+  #dao-tao-body .ss__khoa-seo {
+    background-repeat: repeat;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1095,7 +1107,8 @@
   #dao-tao-body .ss__chuyen-gia .content__text-head {
     text-align: center;
   }
-  #dao-tao-body .ss__chuyen-gia .content__text-head h3, #dao-tao-body .ss__chuyen-gia .content__text-head p {
+  #dao-tao-body .ss__chuyen-gia .content__text-head h3,
+  #dao-tao-body .ss__chuyen-gia .content__text-head p {
     font-size: 34px;
     line-height: 44px;
   }
@@ -1330,7 +1343,7 @@
 
 @media (max-width: 900px) {
   #dao-tao-body .ss__cam-nhan .content .cmts .cmt__text {
-    min-height: 250px;
+    min-height: 252px;
   }
 }
 
@@ -1431,7 +1444,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #dao-tao-body .ss__chung-nhan-gtv .content__head .flex h2, #dao-tao-body .ss__chung-nhan-gtv .content__head .flex p {
+  #dao-tao-body .ss__chung-nhan-gtv .content__head .flex h2,
+  #dao-tao-body .ss__chung-nhan-gtv .content__head .flex p {
     width: 100%;
     text-align: center;
   }
@@ -1581,6 +1595,12 @@
   width: 400px;
   text-align: center;
   font-size: 28px;
+}
+
+@media (max-width: 900px) {
+  #dao-tao-body .ss__dang-ky-khoa .content__head {
+    width: 100%;
+  }
 }
 
 #dao-tao-body .ss__dang-ky-khoa .content__count-down .time {

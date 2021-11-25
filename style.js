@@ -19,7 +19,7 @@ $(document).ready(function(){
         dots: true,
         responsive: [
             {
-              breakpoint: 900,
+              breakpoint: 750,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
