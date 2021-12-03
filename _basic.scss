@@ -241,7 +241,7 @@
         &.banner-2 {
           background: url("banner-2.png");
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           background-position: right;
         }
         a {
@@ -389,6 +389,8 @@
       }
     }
     &__dao-tao {
+      padding-top: 0;
+
       .content {
         &__head {
           width: 700px;
@@ -566,6 +568,7 @@
       }
     }
     &__ky-nang {
+      padding-top: 0;
       background-color: #f5f5f5;
       .content {
         &__head {
@@ -595,6 +598,8 @@
       }
     }
     &__chuong-trinh-hoc {
+      padding-top: 0;
+
       .content__head {
         h2 {
           text-align: left;
@@ -1323,6 +1328,8 @@
       }
     }
     &__chinh-phuc {
+      padding-top: 0;
+
       .content {
         &__head {
           width: 540px;
