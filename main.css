@@ -412,6 +412,11 @@
   }
 }
 
+#dao-tao-body .ss__dvtt {
+  padding-top: 0;
+  background-color: #fff;
+}
+
 #dao-tao-body .ss__dvtt .content__logos {
   width: 877px;
 }
@@ -446,10 +451,6 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-}
-
-#dao-tao-body .ss__why-choose .content__head h2 {
-  text-align: left;
 }
 
 #dao-tao-body .ss__why-choose .content__cards {
@@ -821,6 +822,18 @@
 
 #dao-tao-body .ss__chuong-trinh-hoc .content__head h2 {
   text-align: left;
+}
+
+#dao-tao-body .ss__chuong-trinh-hoc .content__head, #dao-tao-body .ss__cau-hoi .content__head {
+  max-width: 700px;
+}
+
+#dao-tao-body .ss__chuong-trinh-hoc .content__head h2, #dao-tao-body .ss__cau-hoi .content__head h2 {
+  text-align: center;
+}
+
+#dao-tao-body .ss__chuong-trinh-hoc .content__collapse, #dao-tao-body .ss__cau-hoi .content__collapse {
+  max-width: 850px;
 }
 
 #dao-tao-body .ss__chuong-trinh-hoc .content__collapse .accordion-contianer, #dao-tao-body .ss__cau-hoi .content__collapse .accordion-contianer {
@@ -1252,6 +1265,60 @@
   color: #fff;
 }
 
+#dao-tao-body .ss__khach-hang .container .slick-dots {
+  bottom: -50px;
+}
+
+#dao-tao-body .ss__khach-hang .container .slick-dots li button {
+  width: 15px;
+  height: 15px;
+  border-radius: 99px;
+}
+
+#dao-tao-body .ss__khach-hang .container .slick-dots li button::before {
+  width: 15px;
+  height: 15px;
+  font-size: 8px;
+  line-height: 18px;
+  color: #276ae3;
+  opacity: 1;
+}
+
+#dao-tao-body .ss__khach-hang .container .slick-dots li.slick-active button {
+  border: 3px solid #5868e3;
+}
+
+#dao-tao-body .ss__khach-hang .container .slick-dots li.slick-active button::before {
+  color: transparent;
+}
+
+#dao-tao-body .ss__khach-hang .container .slick-prev:before,
+#dao-tao-body .ss__khach-hang .container .slick-next:before {
+  color: #5868e3;
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  #dao-tao-body .ss__khach-hang .container .slick-prev {
+    left: 0;
+  }
+  #dao-tao-body .ss__khach-hang .container .slick-next {
+    right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #dao-tao-body .ss__khach-hang .container .list-chuyen-gia .chuyen-gia .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #dao-tao-body .ss__khach-hang .container .list-chuyen-gia .chuyen-gia .flex .col-6 {
+    width: 100%;
+  }
+}
+
 #dao-tao-body .ss__cam-nhan {
   padding-bottom: 86px;
   background: linear-gradient(80.86deg, #2ad5ff -16%, #22cfff -13.13%, #0fc2ff -4.48%, #04baff 4.45%, #00b7ff 13.95%, #276ae3 49.75%, #4269e3 70.19%, #5868e3 90.64%);
@@ -1676,14 +1743,6 @@
   #dao-tao-body .ss__chinh-phuc .content__head {
     width: 100%;
   }
-}
-
-#dao-tao-body .ss__cau-hoi .content {
-  max-width: 850px;
-}
-
-#dao-tao-body .ss__cau-hoi .content__head {
-  max-width: 700px;
 }
 
 #dao-tao-body .ss__map {

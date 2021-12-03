@@ -12,6 +12,12 @@ $(document).ready(function(){
         autoplay: false,
         dots: true,
     });
+    $('.list-logo').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+    });
     $('.cmts').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
