@@ -636,6 +636,7 @@
   background-size: contain;
   background-position: top center;
   position: relative;
+  background-color: #f4f5f7;
 }
 
 @media (max-width: 600px) {
@@ -745,6 +746,10 @@
 
 #dao-tao-body .ss__khoa-hoc .box .content__text .row .intro-view .intro_icon:hover .fa-play-circle {
   color: #ff5250;
+}
+
+#dao-tao-body .ss__diem-noi-bat {
+  padding-top: 0;
 }
 
 #dao-tao-body .ss__diem-noi-bat .content__head {
@@ -1645,8 +1650,8 @@
 
 #dao-tao-body .ss__uu-dai .content .box {
   padding: 56px;
-  -webkit-box-shadow: 0px 8px 34px 0px #4484fc1c;
-          box-shadow: 0px 8px 34px 0px #4484fc1c;
+  -webkit-box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
+          box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
 }
 
 @media (max-width: 900px) {
