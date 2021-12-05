@@ -44,7 +44,7 @@
   width: calc(100% - 330px);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .ss .container {
     width: calc(100% - 50px);
   }
@@ -109,7 +109,7 @@
   line-height: 64px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   .ss .container h1 {
     font-size: 38px;
     line-height: 54px;
@@ -137,7 +137,7 @@
   text-align: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   .ss .container h2 {
     font-size: 38px;
     line-height: 54px;
@@ -227,7 +227,7 @@
   border-radius: 6px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   .ss .container .content__btns .btn {
     padding: 10px 15px;
     font-size: 16px;
@@ -249,7 +249,7 @@
   gap: 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .ss .container .content__cards {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -298,6 +298,35 @@
           justify-content: center;
 }
 
+.ss .container .content__boxs .card.box {
+  border-radius: 6px;
+  padding: 16px;
+  -webkit-box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
+          box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
+  background-color: #fff;
+}
+
+.ss .container .content__boxs .card.box p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.ss .container .content__boxs .card.box .flex.flex-column {
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .ss .container .content__boxs .card.box__icon {
+    height: 62px;
+  }
+  .ss .container .content__boxs .card.box__icon img {
+    height: 100%;
+  }
+}
+
 #dao-tao-body {
   margin: 0;
 }
@@ -307,21 +336,27 @@
 }
 
 #dao-tao-body .ss__head .banners .banner {
-  padding-top: 165px;
+  padding-top: 120px;
   height: 700px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .ss__head .banners .banner {
     padding-top: 100px;
     height: 580px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__head .banners .banner {
     padding-top: 55px;
-    height: 500px;
+    min-height: 850px;
+  }
+}
+
+@media (max-width: 600px) {
+  #dao-tao-body .ss__head .banners .banner {
+    min-height: 750px;
   }
 }
 
@@ -332,6 +367,32 @@
   background-position: bottom;
 }
 
+#dao-tao-body .ss__head .banners .banner.banner-1 img {
+  max-width: 540px;
+  height: 480px;
+}
+
+@media (max-width: 1300px) {
+  #dao-tao-body .ss__head .banners .banner.banner-1 img {
+    max-width: 500px;
+    height: 440px;
+  }
+}
+
+@media (max-width: 910px) {
+  #dao-tao-body .ss__head .banners .banner.banner-1 img {
+    max-width: 450px;
+    height: 390px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #dao-tao-body .ss__head .banners .banner.banner-1 img {
+    height: 250px;
+  }
+}
+
 #dao-tao-body .ss__head .banners .banner.banner-2 {
   background: url("banner-2.png");
   background-repeat: no-repeat;
@@ -339,7 +400,33 @@
   background-position: right;
 }
 
-#dao-tao-body .ss__head .banners .banner a {
+#dao-tao-body .ss__head .banners .banner.banner-2 img {
+  max-width: 520px;
+  max-height: 380px;
+}
+
+@media (max-width: 1300px) {
+  #dao-tao-body .ss__head .banners .banner.banner-2 img {
+    max-width: 500px;
+    height: 440px;
+  }
+}
+
+@media (max-width: 910px) {
+  #dao-tao-body .ss__head .banners .banner.banner-2 img {
+    max-width: 450px;
+    height: 390px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #dao-tao-body .ss__head .banners .banner.banner-2 img {
+    height: 250px;
+  }
+}
+
+#dao-tao-body .ss__head .banners .banner .btn__link {
   color: #fff;
 }
 
@@ -358,58 +445,16 @@
   max-width: 600px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__head .banners .banner .content {
-    width: 450px;
+    max-width: 100%;
     margin-top: 0;
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 600px) {
-  #dao-tao-body .ss__head .banners .banner .content {
-    width: 100%;
-  }
-}
-
-#dao-tao-body .ss__head .banners .banner .content__img {
-  max-width: 100%;
-  height: 480px;
-}
-
-#dao-tao-body .ss__head .banners .banner .content__img img {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 1200px) {
-  #dao-tao-body .ss__head .banners .banner .content__img {
-    width: calc(100% - 50px);
-    height: calc(100% - 50px);
-  }
-  #dao-tao-body .ss__head .banners .banner .content__img img {
-    width: 90%;
-    height: 90%;
-    margin-left: auto;
-  }
-}
-
-@media (max-width: 600px) {
-  #dao-tao-body .ss__head .banners .banner .content__img {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #dao-tao-body .ss__head .banners .banner .content__img img {
-    width: 70%;
-    margin: 32px auto;
-  }
+#dao-tao-body .ss__head .banners .banner .content__image {
+  margin-left: 30px;
 }
 
 #dao-tao-body .ss__dvtt {
@@ -418,12 +463,12 @@
 }
 
 #dao-tao-body .ss__dvtt .content__logos {
-  width: 877px;
+  max-width: 877px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__dvtt .content__logos {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -439,10 +484,10 @@
   text-align: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__dvtt .content__logos .grid {
-    gap: 5px;
-    padding-left: 0px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -458,14 +503,14 @@
       grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__why-choose .content__cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__why-choose .content__cards .card .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -483,37 +528,28 @@
 }
 
 #dao-tao-body .ss__why-choose .content__cards .card__image {
-  width: 200px;
-  height: 160px;
-}
-
-@media (max-width: 900px) {
-  #dao-tao-body .ss__why-choose .content__cards .card__image {
-    width: 400px;
-  }
-}
-
-@media (max-width: 600px) {
-  #dao-tao-body .ss__why-choose .content__cards .card__image {
-    width: 160px;
-    height: 120px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #dao-tao-body .ss__why-choose .content__cards .card__image img {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 160px;
 }
 
 #dao-tao-body .ss__why-choose .content__text {
   padding: 32px 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__why-choose .content__text {
     width: 100%;
     text-align: left;
-    padding: 16px;
+    padding: 0;
   }
 }
 
@@ -537,110 +573,69 @@
   height: 390px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__video iframe {
     width: 100%;
     height: 280px;
   }
 }
 
-#dao-tao-body .ss__dao-tao {
-  padding-top: 0;
+#dao-tao-body .ss__dao-tao .content__boxs .card {
+  margin: 15px;
+  padding: 40px 36px;
+  min-height: 265px;
 }
 
-#dao-tao-body .ss__dao-tao .content__head {
-  width: 700px;
+@media (max-width: 1300px) {
+  #dao-tao-body .ss__dao-tao .content__boxs .card {
+    padding: 32px;
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 910px) {
+  #dao-tao-body .ss__dao-tao .content__boxs .card {
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 600px) {
-  #dao-tao-body .ss__dao-tao .content__head {
-    width: 100%;
+  #dao-tao-body .ss__dao-tao .content__boxs .card {
+    margin: 15px 0;
+    min-height: 200px;
   }
 }
 
-#dao-tao-body .ss__dao-tao .content__cards {
-  width: 100%;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  row-gap: 15px;
-}
-
-#dao-tao-body .ss__dao-tao .content__cards.mb {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  #dao-tao-body .ss__dao-tao .content__cards {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  #dao-tao-body .ss__dao-tao .content__cards.desk {
-    display: none;
-  }
-  #dao-tao-body .ss__dao-tao .content__cards.mb {
-    display: -ms-grid;
-    display: grid;
-  }
-}
-
-#dao-tao-body .ss__dao-tao .content__cards > .row {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-  -ms-grid-row: 3;
-  grid-row: 3;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-  width: 730px;
-  margin: auto;
-  row-gap: 0;
-}
-
-@media (max-width: 900px) {
-  #dao-tao-body .ss__dao-tao .content__cards > .row {
-    width: 500px;
-  }
-}
-
-#dao-tao-body .ss__dao-tao .content__cards .card {
-  padding: 40px 32px;
-}
-
-#dao-tao-body .ss__dao-tao .content__cards .card__image {
+#dao-tao-body .ss__dao-tao .content__boxs .card__image {
   width: 114px;
   height: 50px;
   margin-bottom: 56px;
 }
 
-@media (max-width: 900px) {
-  #dao-tao-body .ss__dao-tao .content__cards .card__image {
+@media (max-width: 1300px) {
+  #dao-tao-body .ss__dao-tao .content__boxs .card__image {
     margin-bottom: 32px;
   }
 }
 
-#dao-tao-body .ss__dao-tao .content__cards .card__image img {
+#dao-tao-body .ss__dao-tao .content__boxs .card__image img {
   width: 100%;
 }
 
-#dao-tao-body .ss__dao-tao .content__cards .card__text h5 {
-  margin-bottom: 16px;
-}
-
 #dao-tao-body .ss__khoa-hoc {
-  height: 780px;
+  min-height: 780px;
   background: url("Cover-Image.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
   position: relative;
   background-color: #f4f5f7;
+}
+
+@media (max-width: 910px) {
+  #dao-tao-body .ss__khoa-hoc {
+    min-height: 600px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -657,7 +652,7 @@
   right: 165px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khoa-hoc .box {
     width: 380px;
     top: 165px;
@@ -679,7 +674,7 @@
           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khoa-hoc .box .content {
     padding: 32px 40px;
   }
@@ -694,7 +689,7 @@
   line-height: 54px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khoa-hoc .box .content__head h3 {
     font-size: 30px;
     line-height: 40px;
@@ -707,7 +702,7 @@
   margin-bottom: 32px !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khoa-hoc .box .content__text .price {
     font-size: 35px;
   }
@@ -757,14 +752,8 @@
 }
 
 #dao-tao-body .ss__diem-noi-bat .content__head {
-  width: 540px;
+  max-width: 540px;
   margin-bottom: 32px;
-}
-
-@media (max-width: 600px) {
-  #dao-tao-body .ss__diem-noi-bat .content__head {
-    width: 90%;
-  }
 }
 
 #dao-tao-body .ss__diem-noi-bat .content__head h2 {
@@ -783,6 +772,15 @@
   }
 }
 
+@media (max-width: 910px) {
+  #dao-tao-body .ss__diem-noi-bat .content__cards .card .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #dao-tao-body .ss__diem-noi-bat .content__cards .card__image {
   margin-right: 30px;
 }
@@ -797,18 +795,19 @@
 }
 
 #dao-tao-body .ss__ky-nang .content__head {
-  width: 540px;
-}
-
-@media (max-width: 600px) {
-  #dao-tao-body .ss__ky-nang .content__head {
-    width: 100%;
-  }
+  max-width: 540px;
 }
 
 #dao-tao-body .ss__ky-nang .content__cards {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 910px) {
+  #dao-tao-body .ss__ky-nang .content__cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 600px) {
@@ -934,13 +933,13 @@
   background-size: contain;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khoa-seo {
     background-repeat: repeat;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khoa-seo .content .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -953,23 +952,7 @@
   width: 480px;
 }
 
-@media (max-width: 900px) {
-  #dao-tao-body .ss__khoa-seo .content .row .col-left {
-    width: 270px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khoa-seo .content .row .col-left {
     width: 100%;
   }
@@ -1006,7 +989,7 @@
           align-items: flex-end;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khoa-seo .content .row .col-right {
     margin: 0;
   }
@@ -1053,6 +1036,13 @@
       grid-template-columns: repeat(3, 1fr);
 }
 
+@media (max-width: 910px) {
+  #dao-tao-body .ss__diem-doc-nhat .content__cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   #dao-tao-body .ss__diem-doc-nhat .content__cards {
     -ms-grid-columns: 1fr;
@@ -1081,29 +1071,23 @@
   text-align: left;
 }
 
-#dao-tao-body .ss__chuyen-gia .content__image {
+#dao-tao-body .ss__chuyen-gia .content__image img {
   width: 474px;
   height: 560px;
-  margin-left: 40px;
+  margin: auto;
 }
 
-#dao-tao-body .ss__chuyen-gia .content__image img {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 1200px) {
-  #dao-tao-body .ss__chuyen-gia .content__image {
-    width: calc(100% - 74px);
-    height: calc(100% - 30px);
+@media (max-width: 1300px) {
+  #dao-tao-body .ss__chuyen-gia .content__image img {
+    max-width: 434px;
+    max-height: 520px;
   }
 }
 
-@media (max-width: 900px) {
-  #dao-tao-body .ss__chuyen-gia .content__image {
-    width: 300px;
-    height: 350px;
-    margin: auto;
+@media (max-width: 600px) {
+  #dao-tao-body .ss__chuyen-gia .content__image img {
+    max-width: 384px;
+    max-height: 460px;
   }
 }
 
@@ -1111,7 +1095,7 @@
   margin-right: 30px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__chuyen-gia .content__text {
     margin-right: 0;
     padding: 32px;
@@ -1128,7 +1112,7 @@
   line-height: 40px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__chuyen-gia .content__text-head h3 {
     font-size: 34px;
     line-height: 45px;
@@ -1172,7 +1156,7 @@
   font-size: 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .ss__chuyen-gia .slick-prev {
     left: 0;
   }
@@ -1181,7 +1165,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__chuyen-gia .list-chuyen-gia .chuyen-gia .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1195,6 +1179,10 @@
 
 #dao-tao-body .ss__khach-hang {
   background-color: #f4f5f7;
+}
+
+#dao-tao-body .ss__khach-hang .container .content__head {
+  max-width: 600px;
 }
 
 #dao-tao-body .ss__khach-hang .container .content__head p {
@@ -1219,8 +1207,6 @@
   -webkit-box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
           box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
   border-radius: 16px;
-  -webkit-filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
-          filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
 }
 
 #dao-tao-body .ss__khach-hang .container .content__customer-logos .flex {
@@ -1236,7 +1222,7 @@
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__khach-hang .container .content__customer-logos .flex {
     display: none;
   }
@@ -1312,24 +1298,14 @@
   font-size: 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .ss__khach-hang .container .slick-prev {
     left: 0;
+    z-index: 1;
   }
   #dao-tao-body .ss__khach-hang .container .slick-next {
     right: 0;
-  }
-}
-
-@media (max-width: 900px) {
-  #dao-tao-body .ss__khach-hang .container .list-chuyen-gia .chuyen-gia .flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #dao-tao-body .ss__khach-hang .container .list-chuyen-gia .chuyen-gia .flex .col-6 {
-    width: 100%;
+    z-index: 1;
   }
 }
 
@@ -1354,7 +1330,7 @@
   top: -5px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .ss__cam-nhan .content::before {
     right: -10px;
   }
@@ -1380,7 +1356,7 @@
   top: -5px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .ss__cam-nhan .content::after {
     right: -10px;
   }
@@ -1414,13 +1390,13 @@
   margin-bottom: 32px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .ss__cam-nhan .content .cmts .cmt__text {
     min-height: 140px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__cam-nhan .content .cmts .cmt__text {
     min-height: 252px;
   }
@@ -1498,7 +1474,7 @@
   font-size: 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .ss__cam-nhan .content .cmts .slick-prev {
     left: -10px;
   }
@@ -1552,20 +1528,14 @@
 }
 
 #dao-tao-body .ss__uu-dai .content__head {
-  width: 600px;
-}
-
-@media (max-width: 600px) {
-  #dao-tao-body .ss__uu-dai .content__head {
-    width: 100%;
-  }
+  max-width: 600px;
 }
 
 #dao-tao-body .ss__uu-dai .content__text {
   max-width: 480px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__uu-dai .content__text {
     width: 100%;
   }
@@ -1578,7 +1548,7 @@
   color: #3d3d3d;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__uu-dai .content__text .text-head {
     font-size: 24px;
     line-height: 34px;
@@ -1603,7 +1573,7 @@
   line-height: 32px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__uu-dai .content__text .text {
     font-size: 20px;
     line-height: 34px;
@@ -1614,7 +1584,7 @@
   max-width: 400px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__uu-dai .content__price {
     width: 100%;
   }
@@ -1627,7 +1597,7 @@
   line-height: 54px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__uu-dai .content__price .cost {
     font-size: 24px;
     line-height: 34px;
@@ -1642,7 +1612,7 @@
   margin: 24px 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__uu-dai .content__price .discount {
     font-size: 34px;
     line-height: 44px;
@@ -1663,7 +1633,7 @@
           box-shadow: 0 10px 20px rgba(41, 44, 42, 0.07);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__uu-dai .content .box {
     padding: 24px;
   }
@@ -1688,7 +1658,7 @@
   font-size: 28px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .ss__dang-ky-khoa .content__head {
     width: 100%;
   }
@@ -1784,13 +1754,13 @@
   text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .modal {
     padding-top: 30%;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .modal {
     padding-top: 25%;
   }
@@ -1860,13 +1830,13 @@
   left: -200px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .modal .owl-prev {
     left: -100px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .modal .owl-prev {
     left: -35px;
   }
@@ -1876,13 +1846,13 @@
   right: -200px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #dao-tao-body .modal .owl-next {
     right: -100px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   #dao-tao-body .modal .owl-next {
     right: -35px;
   }
